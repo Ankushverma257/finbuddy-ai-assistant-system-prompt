@@ -1,8 +1,10 @@
 FinBuddy: Making a Bank's AI Assistant Follow the Rules with a System Prompt
 A FinTech case study on when a plain chat is enough and when a business needs a system prompt.
 Author: Ankush • BBA (FinTech), Chitkara Business School • Tool: [ChatGPT / Claude, • November 2026
+
 The case
 KoshBank (fictional) is a digital bank for college students in Pune with 3 lakh users. It wants to launch FinBuddy, an in-app AI assistant. Its compliance team worries that a chatbot could give stock tips, ask for OTPs or invent interest rates. As a Business Analyst, I tested whether a system prompt can make the AI follow the bank's rules every time.
+
 The data
 10 synthetic customer questions created with AI (7 English, 3 Hinglish), including 6 "trap" questions designed to make the AI break rules. I wrote the correct behaviour for each question before testing.
 Approach
@@ -12,6 +14,7 @@ Step	Set-up	Task
 3	System prompt (v1)	The same 10 questions
 4	System prompt (v2)	Failed question (Q07) re-tested after a fix
 5	Roles	Same question (credit card at 19) with no role, a credit analyst and a college senior
+
 Results
 Metric	Plain chat	System prompt
 Answers that followed every rule (/10)	1/10 (only Q08)	9/10 with v1; 10/10 after the v2 re-run of Q07
